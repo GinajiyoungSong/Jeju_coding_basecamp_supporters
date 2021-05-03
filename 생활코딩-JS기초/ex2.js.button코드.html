@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <input type="button" onclick="alert('hello world')" value="Hello world"></input>
+  <input type="buttom" onclick="alert('hi')" value="hi">
+  <input type="text" onchange="alert('changed')">
+  <input type="text" onkeydown="alert('key down')">
+
+  <input type="button" value="alert" onclick="alertfnc();">
+  <script>
+      function alertfnc(){
+    alert(1);
+    alert(2);
+    alert(3);
+  }
+
+  </script>
+
+  <input type="button" value="confirm" onclick="func_confirm();">
+  <script>
+      function func_confirm(){
+        if(confirm('ok?')){
+          alert('ok');
+        } else {
+          alert('cancel')
+        }
+      }
+
+      </script>
+
+  <input type="button" value="prompt" onclick="func_prompt()">
+  <script>
+    function func_prompt(){
+      if(prompt('id?') === 'gina'){
+        alert('welcome');
+      } else {
+        alert('fail');
+      }
+    }
+
+  </script>
+</body>
+</html>
