@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  .wrap > div {
+    border:1px solid gray;
+    width:100px;
+    height:100px;
+    position:static;
+    /* 기본값이 static */
+  }
+
+  .wrap > div:nth-child(2) {
+    color:red;
+    position:relative;
+    top:10px;
+    left:40px;
+    /* n번째 자식 style */
+  }
+
+  .wrap > div:nth-child(1) {
+    position:absolute;
+    top:800px;
+    left:20px;
+    /* absolute 는 새로운 레이아웃처럼 공중에 뜬것처럼 무시하게 됨*/
+  }
+
+  .wrap > div:nth-child(4) {
+    position:fixed;
+    top:40px;
+    left:20px;
+    /* 스크롤이 생기면 움직이지 않음 */
+  }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+<div class="wrap">
+  <div>first</div>
+  <div>second</div>
+  <div>third</div>
+  <div>fixed</div>
+
+</div>
+</body>
+</html>
